@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Main from './Main'
-import Footer from './Footer';
+import Header from './components/Header';
+import Main from './components/Main'
+import Footer from './components/Footer';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -45,7 +45,7 @@ export default class App extends React.Component{
       <>
       <GlobalStyle />
       <Header />
-      <Main />
+      <Main nome="Paula" idade={24} estudar="AWS"/>
       <Footer />
       </>
     )

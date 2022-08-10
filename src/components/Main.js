@@ -1,7 +1,7 @@
 import React from 'react';
-import img from './img/lasanha.jpg'
+import imagem from "../img/lasanha.jpg"
 
-export default class Footer extends  React.Component{
+export default class Main extends  React.Component{
     render(){
         return(
             <main>
@@ -12,8 +12,11 @@ export default class Footer extends  React.Component{
                     <li>Energético</li>
                 </ul>
                 <figure>
-                    <img src={img} alt="Imagem de lasanha saindo do forno" />
+                    <img src={imagem} alt="Imagem de lasanha saindo do forno" />
                 </figure>
+                <p>O nome da pessoa que ama lasanha é... {this.props.nome}</p>
+                <p>A idade ...{this.props.idade} anos</p>
+                <p>E também pretende estudar ...{this.props.estudar}</p>
             </main>
         )
     }
